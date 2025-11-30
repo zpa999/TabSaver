@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TabSaver</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>TabSaver</h1>
+      <div class="tabs">
+        <button id="tab-sessions" class="active">Sessions</button>
+        <button id="tab-history">History</button>
+      </div>
+    </header>
+
+    <main id="view-sessions">
+      <div class="actions">
+        <input type="text" id="session-name" placeholder="Session Name (Optional)">
+        <button id="btn-save" class="primary">Save Current Tabs</button>
+      </div>
+      <div id="session-list" class="list-container">
+        <!-- Saved sessions will appear here -->
+        <div class="empty-state">No saved sessions yet.</div>
+      </div>
+    </main>
+
+    <main id="view-history" class="hidden">
+      <div class="actions">
+        <button id="btn-export" class="primary">Export History (JSON/CSV)</button>
+      </div>
+      <div id="history-list" class="list-container">
+        <!-- Daily history will appear here -->
+        <div class="empty-state">No history recorded yet.</div>
+      </div>
+    </main>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
