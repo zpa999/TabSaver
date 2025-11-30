@@ -1,4 +1,4 @@
-# TabSaver Chrome Extension
+# TabSaver Chrome Extension - 크롬웹스토어 배포 전...
 
 ## Overview
 TabSaver is a Chrome extension that allows you to save your current open tabs as a session, restore them later, and track your daily browsing history.
